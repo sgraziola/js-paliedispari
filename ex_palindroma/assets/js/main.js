@@ -37,12 +37,13 @@ let isPalindromic = false;
     if (newWord === word){
         isPalindromic = true;
     }
-if (isPalindromic){
+return isPalindromic;
+}
+
+palindroma(userWord);
+if (palindroma(userWord)){
     console.log(`${userWord} è una parola palindroma`);
 } else {
     console.log(`${userWord} non è una parola palindroma`);
 
 }
-}
-
-palindroma(userWord);
