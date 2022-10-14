@@ -12,7 +12,7 @@ const userWord = prompt("Inserisci una parola e ti dirò se è palindroma");
     //uso join per trasformare il nuovo array in una seconda stringa
     // Se la nuova stringa è uguale alla parola inserita dall'utente allora la parola inserita è palindroma
 
-
+/* 
 const firstArray = userWord.split("");
 console.log(firstArray);
 const secondArray = firstArray.reverse();
@@ -28,3 +28,21 @@ if (isPalindromic){
     console.log(`${userWord} non è una parola palindroma`)
 
 }
+ */
+function palindroma(word) {
+const firstArray = word.split("");
+const secondArray = firstArray.reverse();
+const newWord = secondArray.join("");
+let isPalindromic = false;
+    if (newWord === word){
+        isPalindromic = true;
+    }
+if (isPalindromic){
+    console.log(`${userWord} è una parola palindroma`);
+} else {
+    console.log(`${userWord} non è una parola palindroma`);
+
+}
+}
+
+palindroma(userWord);
